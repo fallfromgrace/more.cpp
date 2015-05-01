@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stdex", "stdex\stdex.vcxproj", "{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{046E9E24-1DE2-4544-8CE9-628378EA44D7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stdex.test.console", "stdex.test.console\stdex.test.console.vcxproj", "{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stdex.test.unit", "stdex.test.unit\stdex.test.unit.vcxproj", "{F7038E9E-4800-44FB-9F51-F60108779261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Debug|Win32.Build.0 = Debug|Win32
+		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Release|Win32.ActiveCfg = Release|Win32
+		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Release|Win32.Build.0 = Release|Win32
+		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Debug|Win32.Build.0 = Debug|Win32
+		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Release|Win32.ActiveCfg = Release|Win32
+		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Release|Win32.Build.0 = Release|Win32
+		{F7038E9E-4800-44FB-9F51-F60108779261}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7038E9E-4800-44FB-9F51-F60108779261}.Debug|Win32.Build.0 = Debug|Win32
+		{F7038E9E-4800-44FB-9F51-F60108779261}.Release|Win32.ActiveCfg = Release|Win32
+		{F7038E9E-4800-44FB-9F51-F60108779261}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
