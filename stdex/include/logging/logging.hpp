@@ -91,19 +91,20 @@ namespace logging
 		class log_manager
 		{
 		public:
-			// 
-			log_manager()
+
+			log_manager() :
+				is_init(false)
 			{
-				this->writer = std::thread([&]()
-				{
-					for (;;)
-					{
-						log_event log_event;
-						this->log_event_queue.pop(log_event);
-						for (auto& logger : this->loggers)
-							logger.write_log_event(log_event);
-					}
-				});
+
+			}
+
+			log_manager(const log_manager&) = delete;
+
+			log_manager& operator=(const log_manager&) = delete;
+
+			~log_manager()
+			{
+
 			}
 
 			void add_logger(const logger& logger)
@@ -111,30 +112,40 @@ namespace logging
 				this->loggers.push_back(logger);
 			}
 
-			log_manager(const log_manager&) = delete;
-
-			log_manager& operator=(const log_manager&) = delete;
-
 			void log_async(const log_event& log_event)
 			{
 				log_event_queue.push(log_event);
 			}
 
-			~log_manager()
+			void init()
 			{
-
+				if (is_init)
+				{
+					this->writer = std::thread([&]()
+					{
+						for (;;)
+						{
+							log_event log_event;
+							this->log_event_queue.pop(log_event);
+							for (auto& logger : this->loggers)
+								logger.write_log_event(log_event);
+						}
+					});
+				}
 			}
 		private:
 			std::thread writer;
 			concurrency::concurrent_vector<logger> loggers;
 			con::concurrent_queue<log_event> log_event_queue;
+			bool_t is_init;
 		};
-
+		
 		static log_manager log_manager_instance;
 
 		template<log_level log_level, typename... arg>
 		void log_async(const std::string& format, arg&&... args)
 		{
+			log_manager_instance.init();
 			log_manager_instance
 				.log_async(make_log_event<log_level>(common::format(format, std::forward<arg>(args)...)));
 		}
@@ -142,6 +153,7 @@ namespace logging
 
 	void add_logger(const std::function<void(const log_event&)>& f)
 	{
+		detail::log_manager_instance.init();
 		detail::log_manager_instance.add_logger(detail::logger(f));
 	}
 }

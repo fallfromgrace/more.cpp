@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>stdex</id>
-    <version>1.0.0.105</version>
-    <title>stdex</title>
+    <id>more.cpp</id>
+    <version>1.0.0.107</version>
+    <title>more.cpp</title>
     <authors>Light</authors>
     <owners>Light</owners>
     <description>Set of useful preprocessor definitions, classes, and functions not found in the STL.</description>
@@ -18,6 +18,6 @@
   </metadata>
   <files>
     <file src="include\**\*.hpp" target="build\native\include\" />
-    <file src="stdex.targets" target="build\native\stdex.targets" />
+    <file src="more.cpp.targets" target="build\native\more.cpp.targets" />
   </files>
 </package>
