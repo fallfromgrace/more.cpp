@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>stlex</RootNamespace>
+    <RootNamespace>morecpp</RootNamespace>
     <ProjectName>more.cpp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -66,6 +66,9 @@
     <PostBuildEvent>
       <Command>$(SolutionDir).nuget\NuGet.exe pack $(ProjectDir)$(ProjectName).nuspec -IncludeReferencedProjects -OutputDirectory $(SolutionDir)..\..\Packages\NuGet\</Command>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>powershell $(ProjectDir)update_nuspec_version.ps1 -project $(ProjectName)</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -113,6 +116,7 @@
     <None Include="more.cpp.targets">
       <SubType>Designer</SubType>
     </None>
+    <None Include="update_nuspec_version.ps1" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

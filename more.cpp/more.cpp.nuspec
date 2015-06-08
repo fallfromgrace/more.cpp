@@ -2,13 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>more.cpp</id>
-    <version>1.0.0.107</version>
+    <version>0.1.5638.23948</version>
     <title>more.cpp</title>
     <authors>Light</authors>
     <owners>Light</owners>
     <description>Set of useful preprocessor definitions, classes, and functions not found in the STL.</description>
     <summary>Set of useful preprocessor definitions, classes, and functions not found in the STL.</summary>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+    </releaseNotes>
     <language>en-US</language>
     <!--<projectUrl></projectUrl>-->
     <!--<licenseUrl></licenseUrl>-->
