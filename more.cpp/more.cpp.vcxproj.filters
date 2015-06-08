@@ -76,6 +76,6 @@
   <ItemGroup>
     <None Include="more.cpp.nuspec" />
     <None Include="more.cpp.targets" />
-    <None Include="update_nuspec_version.ps1" />
+    <None Include="update_nuspec.ps1" />
   </ItemGroup>
 </Project>

@@ -67,7 +67,7 @@
       <Command>$(SolutionDir).nuget\NuGet.exe pack $(ProjectDir)$(ProjectName).nuspec -IncludeReferencedProjects -OutputDirectory $(SolutionDir)..\..\Packages\NuGet\</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>powershell $(ProjectDir)update_nuspec_version.ps1 -project $(ProjectName)</Command>
+      <Command>powershell $(ProjectDir)update_nuspec.ps1 -project $(ProjectName)</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -116,7 +116,7 @@
     <None Include="more.cpp.targets">
       <SubType>Designer</SubType>
     </None>
-    <None Include="update_nuspec_version.ps1" />
+    <None Include="update_nuspec.ps1" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

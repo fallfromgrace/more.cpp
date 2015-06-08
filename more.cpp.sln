@@ -16,6 +16,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "more.cpp.test.console", "mo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "more.cpp.test.unit", "more.cpp.test.unit\more.cpp.test.unit.vcxproj", "{F7038E9E-4800-44FB-9F51-F60108779261}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A805D02-1764-4B4E-AB51-A268DCC7CCDA}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32

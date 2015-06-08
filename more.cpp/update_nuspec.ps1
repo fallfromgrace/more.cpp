@@ -13,4 +13,6 @@ $version = $xml.package.metadata.version.Split(".")
 $version[2] = $revision
 $version[3] = $build
 $xml.package.metadata.version = [string]::Join(".", $version)
+$xml.package.metadata.id = $project
+$xml.package.metadata.title = $project
 $xml.Save($path)
