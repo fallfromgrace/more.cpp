@@ -9,16 +9,20 @@
 #include <concurrent_vector.h>
 #include "common\string_format.hpp"
 
-#ifndef NDEBUG
+//#ifndef NDEBUG
 #define log_debug(format, ...) (logging::detail::log_async<logging::log_level::debug>(format, ##__VA_ARGS__))
 #define log_info(format, ...) (logging::detail::log_async<logging::log_level::info>(format, ##__VA_ARGS__))
 #define log_warn(format, ...) (logging::detail::log_async<logging::log_level::warn>(format, ##__VA_ARGS__))
 #define log_error(format, ...) (logging::detail::log_async<logging::log_level::error>(format, ##__VA_ARGS__))
 #define log_fatal(format, ...) (logging::detail::log_async<logging::log_level::fatal>(format, ##__VA_ARGS__))
 //#define log(level, format, ...) (logging::detail::log_manager_instance.log_async(logging::detail::make_log_event<level>(logging::detail::fmt(format, ##__VA_ARGS__))))
-#else
-#define log(level, message) 
-#endif
+//#else
+//#define log_debug(format, ...) 
+//#define log_info(format, ...) 
+//#define log_warn(format, ...) 
+//#define log_error(format, ...) 
+//#define log_fatal(format, ...) 
+//#endif
 
 namespace logging
 {

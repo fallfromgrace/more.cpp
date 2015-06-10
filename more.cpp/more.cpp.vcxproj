@@ -45,6 +45,7 @@
     <OutDir>$(ProjectDir)bin\$(PlatformTarget)\$(Configuration)\</OutDir>
     <IntDir>$(ProjectDir)obj\$(PlatformTarget)\$(Configuration)\</IntDir>
     <IncludePath>$(IncludePath)</IncludePath>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -58,6 +59,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;STLEX_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnablePREfast>true</EnablePREfast>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -89,7 +91,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\chrono\high_resolution_clock.hpp" />
     <ClInclude Include="include\common\function_traits.hpp" />
     <ClInclude Include="include\common\string_format.hpp" />
     <ClInclude Include="include\common\string_traits.hpp" />
@@ -102,10 +103,20 @@
     <ClInclude Include="include\functional\either.hpp" />
     <ClInclude Include="include\functional\maybe.hpp" />
     <ClInclude Include="include\includes.hpp" />
+    <ClInclude Include="include\linq\linq.hpp" />
+    <ClInclude Include="include\linq\from.hpp" />
+    <ClInclude Include="include\linq\group_by.hpp" />
+    <ClInclude Include="include\linq\iterator.hpp" />
+    <ClInclude Include="include\linq\select.hpp" />
+    <ClInclude Include="include\linq\select_many.hpp" />
+    <ClInclude Include="include\linq\skip.hpp" />
+    <ClInclude Include="include\linq\take.hpp" />
+    <ClInclude Include="include\linq\where.hpp" />
+    <ClInclude Include="include\linq\zip.hpp" />
+    <ClInclude Include="include\linq\zip_simple.hpp" />
     <ClInclude Include="include\logging\logging.hpp" />
     <ClInclude Include="include\msvc.hpp" />
     <ClInclude Include="include\stl.hpp" />
-    <ClInclude Include="include\chrono\stopwatch.hpp" />
     <ClInclude Include="include\windows.hpp" />
     <ClInclude Include="include\x86.hpp" />
   </ItemGroup>

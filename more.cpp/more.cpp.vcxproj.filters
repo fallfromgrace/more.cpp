@@ -66,10 +66,37 @@
     <ClInclude Include="include\windows.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\chrono\stopwatch.hpp">
+    <ClInclude Include="include\linq\from.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\chrono\high_resolution_clock.hpp">
+    <ClInclude Include="include\linq\group_by.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\iterator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\select.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\select_many.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\skip.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\take.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\where.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\zip.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\zip_simple.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linq\linq.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
