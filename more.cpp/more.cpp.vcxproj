@@ -91,6 +91,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\chrono\date.hpp" />
     <ClInclude Include="include\common\function_traits.hpp" />
     <ClInclude Include="include\common\string_format.hpp" />
     <ClInclude Include="include\common\string_traits.hpp" />
@@ -114,7 +115,12 @@
     <ClInclude Include="include\linq\where.hpp" />
     <ClInclude Include="include\linq\zip.hpp" />
     <ClInclude Include="include\linq\zip_simple.hpp" />
-    <ClInclude Include="include\logging\logging.hpp" />
+    <ClInclude Include="include\logging\level.hpp" />
+    <ClInclude Include="include\logging\log.hpp" />
+    <ClInclude Include="include\logging\logger.hpp" />
+    <ClInclude Include="include\logging\event.hpp" />
+    <ClInclude Include="include\logging\formatter.hpp" />
+    <ClInclude Include="include\logging\manager.hpp" />
     <ClInclude Include="include\msvc.hpp" />
     <ClInclude Include="include\stl.hpp" />
     <ClInclude Include="include\windows.hpp" />
