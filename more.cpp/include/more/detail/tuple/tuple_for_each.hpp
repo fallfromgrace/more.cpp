@@ -3,7 +3,7 @@
 #include <tuple>
 #include <type_traits>
 
-namespace common
+namespace more
 {
 	template<size_t>
 	struct tuple_index

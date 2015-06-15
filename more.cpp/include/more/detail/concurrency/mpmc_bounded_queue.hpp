@@ -1,12 +1,13 @@
-#ifndef MPMC_BOUNDED_QUEUE_HPP
-#define MPMC_BOUNDED_QUEUE_HPP
+#ifndef MORE_CPP_MPMC_BOUNDED_QUEUE_HPP
+#define MORE_CPP_MPMC_BOUNDED_QUEUE_HPP
 
-#include "includes.hpp"
-#include <type_traits>
 #include <array>
 #include <atomic>
+#include <type_traits>
 
-namespace con
+#include "more\includes.hpp"
+
+namespace more
 {
 	// Implementation of a concurrent queue using only one CAS operation.
 	// courtesy of dmitry vyukyov
@@ -173,4 +174,4 @@ namespace con
 
 }
 
-#endif//_MPMC_BOUNDED_QUEUE_HPP
+#endif//MORE_CPP_MPMC_BOUNDED_QUEUE_HPP

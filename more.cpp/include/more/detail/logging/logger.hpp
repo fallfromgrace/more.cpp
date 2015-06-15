@@ -2,10 +2,10 @@
 
 #include <functional>
 
-#include "logging\event.hpp"
-#include "logging\formatter.hpp"
+#include "more\detail\logging\event.hpp"
+#include "more\detail\logging\formatter.hpp"
 
-namespace logging
+namespace more
 {
 	// performs actual logging.
 	class logger

@@ -3,11 +3,10 @@
 #include <chrono>
 #include <string>
 
-#include "includes.hpp"
+#include "more\includes.hpp"
+#include "more\detail\logging\level.hpp"
 
-#include "logging\level.hpp"
-
-namespace logging
+namespace more
 {
 	// 
 	class event

@@ -3,14 +3,14 @@
 #include <concurrent_vector.h>
 #include <thread>
 
-#include "includes.hpp"
-#include "concurrency\concurrent_queue.hpp"
+#include "more\includes.hpp"
+#include "more\concurrent_queue.hpp"
 
-#include "logging\event.hpp"
-#include "logging\level.hpp"
-#include "logging\logger.hpp"
+#include "more\detail\logging\event.hpp"
+#include "more\detail\logging\level.hpp"
+#include "more\detail\logging\logger.hpp"
 
-namespace logging
+namespace more
 {
 	namespace detail
 	{
@@ -79,7 +79,7 @@ namespace logging
 
 		private:
 			bool_t is_logging;
-			con::concurrent_queue<event> event_queue;
+			concurrent_queue<event> event_queue;
 			concurrency::concurrent_vector<logger> loggers;
 			std::thread writer;
 		};

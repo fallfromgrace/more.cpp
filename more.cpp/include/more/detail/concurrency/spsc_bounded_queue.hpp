@@ -1,12 +1,12 @@
-#ifndef SPSC_BOUNDED_QUEUE_HPP
-#define SPSC_BOUNDED_QUEUE_HPP
+#ifndef MORE_CPP_SPSC_BOUNDED_QUEUE_HPP
+#define MORE_CPP_SPSC_BOUNDED_QUEUE_HPP
 
 #include <array>
 #include <atomic>
 
-#include "includes.hpp"
+#include "more\includes.hpp"
 
-namespace ez
+namespace more
 {
 	// from Correct and Efficient Bounded FIFO Queues
 	template<typename value_t, size_t size = 1024>
@@ -133,4 +133,4 @@ namespace ez
 	};
 }
 
-#endif//SPSC_BOUNDED_QUEUE_HPP
+#endif//MORE_CPP_SPSC_BOUNDED_QUEUE_HPP

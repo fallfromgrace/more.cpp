@@ -11,14 +11,14 @@
 #include <map>
 #include <unordered_map>
 
-#include "linq\from.hpp"
-#include "linq\select.hpp"
-#include "linq\skip.hpp"
-#include "linq\take.hpp"
-#include "linq\where.hpp"
-#include "linq\zip_simple.hpp"
+#include "more\detail\linq\from.hpp"
+#include "more\detail\linq\select.hpp"
+#include "more\detail\linq\skip.hpp"
+#include "more\detail\linq\take.hpp"
+#include "more\detail\linq\where.hpp"
+#include "more\detail\linq\zip_simple.hpp"
 
-#include "linq\iterator.hpp"
+#include "more\detail\linq\iterator.hpp"
 
 namespace more
 {

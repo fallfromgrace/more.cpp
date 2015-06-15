@@ -1,16 +1,15 @@
 #include "CppUnitTest.h"
 #include <thread>
 
-#include "common\string_format.hpp"
-#include "chrono\date.hpp"
-#include "logging\log.hpp"
+#include "more\string.hpp"
+#include "more\log.hpp"
 #include "win32\event.hpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace logging
+namespace more
 {		
-	TEST_CLASS(logging_tests)
+	TEST_CLASS(logging)
 	{
 	public:
 
@@ -20,10 +19,10 @@ namespace logging
 			int count = 0;
 			add_logger([&](const event& e)
 			{
-				auto result = common::format(
+				auto result = more::format(
 					"%i | %s | %s",
 					e.level,
-					chrono::to_string("%Y-%b-%d %H:%M:%S", e.timestamp).c_str(),
+					more::to_string("%Y-%b-%d %H:%M:%S", e.timestamp).c_str(),
 					e.message.c_str());
 				count++;
 				if (count == 100)
@@ -41,7 +40,7 @@ namespace logging
 			std::thread t3(action);
 			std::thread t4(action);
 
-			logging_complete.wait_one();
+			logging_complete.wait();
 
 			t1.join();
 			t2.join();

@@ -18,7 +18,10 @@
     <ClCompile Include="src\logging.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\common.cpp">
+    <ClCompile Include="src\string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\concurrent_queue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

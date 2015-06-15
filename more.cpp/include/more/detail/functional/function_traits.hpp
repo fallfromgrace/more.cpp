@@ -1,9 +1,9 @@
-#ifndef LIBEZM_FUNCTION_TRAITS_HPP
-#define LIBEZM_FUNCTION_TRAITS_HPP
+#ifndef MORE_CPP_FUNCTION_TRAITS_HPP
+#define MORE_CPP_FUNCTION_TRAITS_HPP
 
 #include <tuple>
 
-namespace common
+namespace more
 {
 	template<typename T>
 	struct function_traits :
@@ -70,4 +70,4 @@ namespace common
 	//};
 }
 
-#endif//LIBEZM_FUNCTION_TRAITS_HPP
+#endif//MORE_CPP_FUNCTION_TRAITS_HPP

@@ -5,6 +5,7 @@
 
 #include <cassert>
 #include <cstdio>
+#include <cstdlib>
 #include <string>
 
 #if _MSC_VER != 1900
@@ -13,8 +14,17 @@
 #pragma warning(disable:4996)
 #endif
 
-namespace common
+namespace more
 {
+	// 
+	static std::wstring to_wstring(const std::string& s)
+	{
+		size_t count = s.length();
+		std::wstring dest(count, 0);
+		mbstowcs(const_cast<wchar_t*>(dest.data()), s.data(), count);
+		return dest;
+	}
+
 	// formats a string 
 	template<typename... arg>
 	std::string format(const std::string& format, arg&&... args)
@@ -32,7 +42,7 @@ namespace common
 
 #ifdef _MSC_VER
 #pragma warning(pop)
-#undef snprintf;
+#undef snprintf
 #endif
 
 #endif//MORE_CPP_STRING_FORMAT_HPP

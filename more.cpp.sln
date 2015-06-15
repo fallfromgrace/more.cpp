@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{046E9E
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "more.cpp.test.console", "more.cpp.test.console\more.cpp.test.console.vcxproj", "{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "more.cpp.test.unit", "more.cpp.test.unit\more.cpp.test.unit.vcxproj", "{F7038E9E-4800-44FB-9F51-F60108779261}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A805D02-1764-4B4E-AB51-A268DCC7CCDA}"
@@ -32,10 +30,6 @@ Global
 		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Debug|Win32.Build.0 = Debug|Win32
 		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Release|Win32.ActiveCfg = Release|Win32
 		{1AACC77D-7F0A-40CA-AF92-FFE3AD49019B}.Release|Win32.Build.0 = Release|Win32
-		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Debug|Win32.ActiveCfg = Debug|Win32
-		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Debug|Win32.Build.0 = Debug|Win32
-		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Release|Win32.ActiveCfg = Release|Win32
-		{C887F9B3-7C9A-4229-A408-E4A8188C7A3F}.Release|Win32.Build.0 = Release|Win32
 		{F7038E9E-4800-44FB-9F51-F60108779261}.Debug|Win32.ActiveCfg = Debug|Win32
 		{F7038E9E-4800-44FB-9F51-F60108779261}.Debug|Win32.Build.0 = Debug|Win32
 		{F7038E9E-4800-44FB-9F51-F60108779261}.Release|Win32.ActiveCfg = Release|Win32

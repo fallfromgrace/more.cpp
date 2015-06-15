@@ -1,11 +1,11 @@
-#ifndef LIBEZM_WAIT_STRATEGY_HPP
-#define LIBEZM_WAIT_STRATEGY_HPP
+#ifndef MORE_CPP_WAIT_STRATEGY_HPP
+#define MORE_CPP_WAIT_STRATEGY_HPP
 
 #include <condition_variable>
 #include <mutex>
 #include <thread>
 
-namespace con
+namespace more
 {
 	// Uses mutex and condition_variable to halt the thread.
 	class blocking_wait_strategy

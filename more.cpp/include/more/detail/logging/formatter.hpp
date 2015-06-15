@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace logging
+namespace more
 {
 	class formatter
 	{

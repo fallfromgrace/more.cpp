@@ -1,12 +1,14 @@
 #pragma once
 
-#include "common\string_format.hpp"
+#include <string>
 
-#include "logging\manager.hpp"
+#include "more\includes.hpp"
+#include "more\detail\string\string_format.hpp"
+#include "more\detail\logging\manager.hpp"
 
-namespace logging
+namespace more
 {
-
+	// 
 	template<typename... arg>
 	void log(
 		int32_t level,
@@ -15,7 +17,7 @@ namespace logging
 	{
 		event e;
 		e.level = level;
-		e.message = common::format(format, std::forward<arg>(args)...);
+		e.message = more::format(format, std::forward<arg>(args)...);
 		e.timestamp = std::chrono::system_clock::now();
 		e.thread_id = 0;
 

@@ -2,16 +2,16 @@
 #define _DEFS_HPP
 
 // Architecture
-#include "x86.hpp"
+#include "more\detail\x86.hpp"
 
 // Compiler
-#include "msvc.hpp"
+#include "more\detail\msvc.hpp"
 
 // Platform
-#include "windows.hpp"
+#include "more\detail\windows.hpp"
 
 // Library
-#include "stl.hpp"
+#include "more\detail\stl.hpp"
 
 // Other
 //

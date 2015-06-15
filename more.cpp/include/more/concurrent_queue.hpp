@@ -1,10 +1,12 @@
-#ifndef LIBEZM_CONCURRENT_QUEUE_HPP
-#define LIBEZM_CONCURRENT_QUEUE_HPP
+#pragma once
 
-#include "mpmc_bounded_queue.hpp"
-#include "wait_strategy.hpp"
+#ifndef MORE_CPP_CONCURRENT_QUEUE_HPP
+#define MORE_CPP_CONCURRENT_QUEUE_HPP
 
-namespace con
+#include "more\detail\concurrency\mpmc_bounded_queue.hpp"
+#include "more\detail\concurrency\wait_strategy.hpp"
+
+namespace more
 {
 	// Generic concurrent queue.
 	template<
@@ -37,4 +39,4 @@ namespace con
 	};
 }
 
-#endif//LIBEZM_CONCURRENT_QUEUE_HPP
+#endif//MORE_CPP_CONCURRENT_QUEUE_HPP
